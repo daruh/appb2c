@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "0fuJRQQkkotvGXnL6a3aQjsIEJCZ3v3Pf/h+Gb67QQlo1bt4XQWdMwkpp4E4B+JdRpbNslar//qXFvxjKArTkw==",
+  "dgSpecHash": "TWvg7D0sa/+d8YcBgK0rniHPIUNnXB0djLbIosE7xHpjkiJqmfbhSVwQUgfb46NLtp+z3OM38JoR5V9MMifU5w==",
   "success": true,
   "projectFilePath": "C:\\SNOW\\private_repos\\appb2c\\addb2csecond\\addb2csecond.csproj",
   "expectedPackageFiles": [
@@ -21,6 +21,7 @@
     "C:\\Users\\daruch\\.nuget\\packages\\microsoft.identitymodel.protocols\\6.15.1\\microsoft.identitymodel.protocols.6.15.1.nupkg.sha512",
     "C:\\Users\\daruch\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\6.15.1\\microsoft.identitymodel.protocols.openidconnect.6.15.1.nupkg.sha512",
     "C:\\Users\\daruch\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.15.1\\microsoft.identitymodel.tokens.6.15.1.nupkg.sha512",
+    "C:\\Users\\daruch\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.19.4\\microsoft.visualstudio.azure.containers.tools.targets.1.19.4.nupkg.sha512",
     "C:\\Users\\daruch\\.nuget\\packages\\system.buffers\\4.5.0\\system.buffers.4.5.0.nupkg.sha512",
     "C:\\Users\\daruch\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.6.0\\system.diagnostics.diagnosticsource.4.6.0.nupkg.sha512",
     "C:\\Users\\daruch\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.15.1\\system.identitymodel.tokens.jwt.6.15.1.nupkg.sha512",

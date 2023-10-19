@@ -11,7 +11,8 @@
           "Microsoft.AspNetCore.Authentication.JwtBearer": "7.0.11",
           "Microsoft.AspNetCore.Authentication.OpenIdConnect": "7.0.11",
           "Microsoft.Identity.Web": "1.16.0",
-          "Microsoft.Identity.Web.UI": "1.16.0"
+          "Microsoft.Identity.Web.UI": "1.16.0",
+          "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.19.4"
         },
         "runtime": {
           "addb2csecond.dll": {}
@@ -221,6 +222,7 @@
           }
         }
       },
+      "Microsoft.VisualStudio.Azure.Containers.Tools.Targets/1.19.4": {},
       "System.Buffers/4.5.0": {},
       "System.Diagnostics.DiagnosticSource/4.6.0": {},
       "System.IdentityModel.Tokens.Jwt/6.15.1": {
@@ -383,6 +385,13 @@
       "sha512": "sha512-0bd0ocKuNai0/GdhboIW37R6z8I0vFqlmiPeG055SJxPPJ7dfBo2tjJ3bPV9vjFCRDuusj24dldOsg4hWui6iw==",
       "path": "microsoft.identitymodel.tokens/6.15.1",
       "hashPath": "microsoft.identitymodel.tokens.6.15.1.nupkg.sha512"
+    },
+    "Microsoft.VisualStudio.Azure.Containers.Tools.Targets/1.19.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-aKxpRAUIxDrnSnyr7xJWGixOBgsB7Z4oHpWRkpRzzq04kfze4mN7944gRc4X9H2U5KG3A/btF74kavkO8KXqCg==",
+      "path": "microsoft.visualstudio.azure.containers.tools.targets/1.19.4",
+      "hashPath": "microsoft.visualstudio.azure.containers.tools.targets.1.19.4.nupkg.sha512"
     },
     "System.Buffers/4.5.0": {
       "type": "package",

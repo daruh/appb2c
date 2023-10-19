@@ -1,0 +1,14 @@
+﻿version: "3.9"
+services:
+    adb2c:
+      container_name: "addb2c"
+      image: dauh/addb2c:2.0
+      build:
+        # in my case, Dockerfile was in a subfolder
+        context: .
+        dockerfile: Dockerfile
+      ports:
+        - 7054:7054
+      environment:
+        - ASPNETCORE_URLS=http://+:7054
+        - ASPNETCORE_ENVIRONMENT=Development
