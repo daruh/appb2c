@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.Identity.Web;
 using Microsoft.Identity.Web.UI;
 using Microsoft.IdentityModel.Logging;
+using Microsoft.AspNetCore.HttpLogging;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -22,10 +23,35 @@ builder.Services.AddControllersWithViews(options =>
     options.Filters.Add(new AuthorizeFilter(policy));
 });
 
+builder.Services.AddHttpLogging(logging =>
+{
+    logging.LoggingFields = HttpLoggingFields.All;
+    logging.RequestHeaders.Add("Set-Cookie");
+    logging.RequestHeaders.Add("Cookie");
+    logging.ResponseHeaders.Add("Set-Cookie");
+    logging.ResponseHeaders.Add("Cookie");
+    logging.ResponseBodyLogLimit = 0;
+
+    logging.RequestHeaders.Remove("Accept");
+    logging.RequestHeaders.Remove("Accept-Encoding");
+    logging.RequestHeaders.Remove("Accept-Language");
+    logging.RequestHeaders.Remove("sec-ch-ua");
+    logging.RequestHeaders.Remove("sec-ch-ua-mobile");
+    logging.RequestHeaders.Remove("sec-ch-ua-platform");
+    logging.RequestHeaders.Remove("sec-fetch-site");
+    logging.RequestHeaders.Remove("sec-fetch-mode");
+    logging.RequestHeaders.Remove("sec-fetch-dest");
+    logging.RequestHeaders.Remove("Protocol");
+    logging.RequestHeaders.Remove("User-Agent");
+    logging.RequestHeaders.Remove("Referer");
+
+});
+
 builder.Services.AddRazorPages()
     .AddMicrosoftIdentityUI();
 
 var app = builder.Build();
+app.UseHttpLogging();
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
@@ -37,6 +63,7 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
+
 
 app.UseRouting();
 

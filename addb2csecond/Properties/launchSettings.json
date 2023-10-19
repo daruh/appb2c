@@ -21,7 +21,7 @@
       "launchBrowser": true,
       "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}",
       "environmentVariables": {
-        "ASPNETCORE_URLS": "http://+:7054"
+        "ASPNETCORE_URLS": "https://+:7054"
       },
       "publishAllPorts": true,
       "useSSL": true
