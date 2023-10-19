@@ -1,0 +1,1 @@
+﻿dotnet new mvc -o mywebapp --auth SingleOrg
